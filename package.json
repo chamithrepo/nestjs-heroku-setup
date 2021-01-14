@@ -5,14 +5,10 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./build/src/server.js",
-    "dev": "nodemon ./build/src/server.js",
-    "production": "NODE_ENV=production node ./build/src/app.js",
-    "test": "NODE_ENV=test LOG_LEVEL=debug jest --forceExit --silent ./build/test",
-    "coverage": "NODE_ENV=test LOG_LEVEL=debug jest --coverage --forceExit ./build/test/api",
     "compile": "tsc -p ."
   },
   "author": "chamith",
-  "license": "stupendusco",
+  "license": "chamith",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "express": "^4.17.1",

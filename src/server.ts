@@ -6,6 +6,11 @@ import logger from "./logger";
 
 const app = express();
 
+app.get("/", (req, res) => {
+  logger.info(req);
+  res.json(`It's Working!!`);
+});
+
 /**
  * Setup listener port
  */
