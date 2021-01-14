@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "npm run compile",
     "start": "node ./build/src/server.js",
-    "compile": "tsc -p ."
+    "compile": "tsc"
   },
   "author": "chamith",
   "license": "chamith",
