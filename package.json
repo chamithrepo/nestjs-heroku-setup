@@ -2,6 +2,7 @@
   "name": "hello-nodejs-typescript",
   "version": "1.0.0",
   "description": "",
+  "main": "server.js",
   "scripts": {
     "build-ts": "tsc",
     "postinstall": "npm run build-ts",
