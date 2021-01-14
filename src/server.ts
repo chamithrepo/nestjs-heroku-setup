@@ -1,12 +1,6 @@
-import * as express from "express";
-import log from "./log";
-
+import express from 'express';
 const app = express();
 
-app.get("/", (req, res) => {
-    res.json(JSON.stringify({ok: 1})).end();
-});
+app.get('/', (req, res) => res.send('Hello World!'));
 
-app.listen(process.env.PORT || 5000, () => {
-    log.info("app running");
-});
+app.listen(3000, () => console.log('Example app listening on port 3000!'));
