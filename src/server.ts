@@ -1,8 +1,8 @@
 import express from "express";
 const app = express();
 
-app.get("/", (req, res) => res.json(JSON.stringify({ ok: 1 })).end());
+app.get("/", (req, res) => res.send("Productizecrm Backend"));
 
-app.listen(process.env.PORT || 5000, () =>
+app.listen(process.env.PORT || 3000, () =>
   console.log("Example app listening on port 3000!")
 );
