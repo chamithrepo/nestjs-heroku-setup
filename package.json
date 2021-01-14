@@ -1,29 +1,30 @@
 {
-  "name": "productizecrm-backend",
+  "name": "hello-nodejs-typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node build/src/server.js",
-    "build": "tsc",
-    "postinstall": "npm run build"
+    "build-ts": "tsc",
+    "postinstall": "npm run build-ts",
+    "start": "npm run serve",
+    "serve": "node dist/server.js",
+    "watch-node": "nodemon dist/server.js",
+    "watch-ts": "tsc -w"
   },
   "engines": {
     "node": "12.13.1"
   },
-  "author": "chamith",
-  "license": "stupendusco",
-  "dependencies": {
-    "bcrypt": "^5.0.0",
-    "express": "^4.17.1",
-    "inversify": "^5.0.5",
-    "validator": "^13.5.2",
-    "winston": "^3.3.3"
-  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
-    "@types/express": "^4.17.9",
-    "@types/node": "^14.14.20",
+    "@types/express": "^4.17.11",
+    "@types/node": "^8.10.66",
+    "nodemon": "^2.0.7",
     "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "@types/express": "^4.16.0"
   }
 }
