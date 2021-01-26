@@ -25,6 +25,7 @@
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Basic setup to deploy Nestjs application to Heroku.
 
 ## Installation
 
